@@ -12,18 +12,18 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
 
-  Widget getView(){
-    if(_selectedIndex ==0){
+  Widget getView() {
+    if (_selectedIndex == 0) {
       return MovieHome();
-      
-    }else{
+    } else {
       return TvHome();
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black87,
+      backgroundColor: Colors.black38,
       appBar: AppBar(
         title: Center(child: Text("Flutter Movie App")),
       ),

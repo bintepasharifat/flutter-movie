@@ -20,7 +20,11 @@ class ApiService {
       url = kmovieDbURL + ktop_rated;
     }else if(type == MovieType.upcoming){
       url = kmovieDbURL + kupcoming;
+
+      
+   
     }
+    
     try{
       Response response =await get(Uri.parse(url+"?api_key=3118572c07f2e3664bb2a464035926b9&language=en-US"));
 
